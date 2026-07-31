@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <section id="contact" className="contact">
+    <section className="contact" id="contact">
 
       <h2 className="section-title">
         Contact Wigostan Healthcare
@@ -33,6 +33,20 @@ function Contact() {
             Haryana – 135102
           </p>
         </div>
+
+      </div>
+
+      <div className="map-container">
+
+        <iframe
+          src="https://www.google.com/maps?q=30.304821,77.308907&z=16&output=embed"
+          width="100%"
+          height="350"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          title="Wigostan Healthcare Location"
+        ></iframe>
 
       </div>
 

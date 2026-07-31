@@ -1,6 +1,6 @@
 function Gallery() {
   return (
-    <section id="gallery" className="gallery">
+    <section className="gallery" id="gallery">
 
       <h2 className="section-title">
         Our Manufacturing Gallery
@@ -14,19 +14,29 @@ function Gallery() {
       <div className="gallery-container">
 
         <div className="gallery-card">
+
           <img
-            src="/hero-pharma.png"
+            src={`${import.meta.env.BASE_URL}hero-pharma.png`}
             alt="Wigostan Healthcare Products"
           />
-          <h3>Healthcare Products</h3>
+
+          <h3>
+            Healthcare Products
+          </h3>
+
         </div>
 
         <div className="gallery-card">
+
           <img
-            src="/iso-certified.png"
+            src={`${import.meta.env.BASE_URL}iso-certified.png`}
             alt="Wigostan Healthcare Certification"
           />
-          <h3>Quality Certification</h3>
+
+          <h3>
+            Quality Certification
+          </h3>
+
         </div>
 
       </div>

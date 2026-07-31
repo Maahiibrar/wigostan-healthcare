@@ -28,7 +28,7 @@ ${message}`;
   };
 
   return (
-    <section id="enquiry" className="enquiry">
+    <section className="enquiry" id="enquiry">
 
       <h2 className="section-title">
         Send Us an Enquiry
@@ -39,7 +39,10 @@ ${message}`;
         Send us your requirements and our team will get in touch with you.
       </p>
 
-      <form className="enquiry-form" onSubmit={handleSubmit}>
+      <form
+        className="enquiry-form"
+        onSubmit={handleSubmit}
+      >
 
         <input
           type="text"
@@ -55,7 +58,11 @@ ${message}`;
           required
         />
 
-        <select name="product" required defaultValue="">
+        <select
+          name="product"
+          required
+          defaultValue=""
+        >
           <option value="" disabled>
             Select Product Category
           </option>

@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <section id="home" className="hero">
+    <section className="hero" id="home">
 
       <div className="hero-content">
 
@@ -20,13 +20,9 @@ function Hero() {
         </p>
 
         <div className="hero-points">
-
           <div>🌿 Ayurvedic Products</div>
-
           <div>💊 Nutraceutical Products</div>
-
           <div>🏥 Allopathic Products</div>
-
         </div>
 
         <div className="hero-buttons">
@@ -52,7 +48,7 @@ function Hero() {
       <div className="hero-image">
 
         <img
-          src="/hero-pharma.png"
+          src={`${import.meta.env.BASE_URL}hero-pharma.png`}
           alt="Wigostan Healthcare Products"
         />
 

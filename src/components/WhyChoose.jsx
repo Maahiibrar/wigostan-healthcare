@@ -23,37 +23,39 @@ function WhyChoose() {
   ];
 
   return (
-    <section id="why-choose" className="why-choose">
-      <div className="container">
+    <section className="why-choose">
 
-        <h2 className="section-title">
-          Why Choose Wigostan Healthcare?
-        </h2>
+      <h2 className="section-title">
+        Why Choose Wigostan Healthcare?
+      </h2>
 
-        <p className="section-subtitle">
-          We combine quality manufacturing, modern processes and healthcare
-          expertise to deliver reliable solutions for our partners.
-        </p>
+      <p className="section-subtitle">
+        We combine quality manufacturing, modern processes and healthcare
+        expertise to deliver reliable solutions for our partners.
+      </p>
 
-        <div className="why-container">
+      <div className="why-container">
 
-          {reasons.map((reason, index) => (
-            <div className="why-card" key={index}>
+        {reasons.map((reason, index) => (
+          <div className="why-card" key={index}>
 
-              <div className="why-icon">
-                {reason.icon}
-              </div>
-
-              <h3>{reason.title}</h3>
-
-              <p>{reason.text}</p>
-
+            <div className="why-icon">
+              {reason.icon}
             </div>
-          ))}
 
-        </div>
+            <h3>
+              {reason.title}
+            </h3>
+
+            <p>
+              {reason.text}
+            </p>
+
+          </div>
+        ))}
 
       </div>
+
     </section>
   );
 }

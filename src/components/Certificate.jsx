@@ -1,6 +1,6 @@
 function Certificate() {
   return (
-    <section id="certificate" className="certificate">
+    <section className="certificate" id="certificate">
 
       <div className="container certificate-content">
 
@@ -11,8 +11,9 @@ function Certificate() {
           </h2>
 
           <p>
-            Wigostan Healthcare follows high-quality manufacturing standards
-            to ensure safe, effective and reliable healthcare products.
+            Wigostan Healthcare follows high-quality manufacturing
+            standards to ensure safe, effective and reliable
+            healthcare products.
           </p>
 
           <div className="certificate-box">
@@ -20,8 +21,8 @@ function Certificate() {
             <h3>✅ Quality Certified</h3>
 
             <p>
-              Manufacturing with strict quality control, modern facilities
-              and regulatory compliance.
+              Manufacturing with strict quality control, modern
+              facilities and regulatory compliance.
             </p>
 
           </div>
@@ -31,7 +32,7 @@ function Certificate() {
         <div className="certificate-image">
 
           <img
-            src="/iso-certified.png"
+            src={`${import.meta.env.BASE_URL}iso-certified.png`}
             alt="Wigostan Healthcare Certification"
           />
 
